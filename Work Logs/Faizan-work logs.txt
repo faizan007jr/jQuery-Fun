@@ -1,0 +1,17 @@
+------------------Faizan Jariwala-------------------
+
+tictactoe.html created on 28/11/2018
+css for tictactoe created on 28/11/2018
+javascript for tictactoe created on 28/11/2018
+
+javascript  for tictactoe continued on 29/11/2018
+
+javascript for tictactoe completed on  3/12/2018
+
+index.html created on 4/12/2018
+work.html created on 4/12/2018
+main.js created and completed on 5/12/2018
+
+combined other pages on 7/12/2018
+
+completed project on 9/12/2018  //combined all css to one main.css to make overall look consistent

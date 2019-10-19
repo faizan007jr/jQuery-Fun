@@ -1,0 +1,233 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: linear-gradient(#74ebd5, #ACB6E5);
+	color: #5F6271;
+	height: 95.5vh;
+}
+
+header h1 {
+	font-weight: 400;
+	line-height: 60px;
+	font-size: 3.24em;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	text-shadow: 4px 4px 0px #ACB6E5, 7px 7px 0px rgba(0, 0, 0, 0.2);
+	margin-top: 30px;
+	margin-bottom: 30px
+}
+
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.todo-container {
+	background-color: #FFFFFF;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.18);
+	height: 24em;
+	padding: 2em;
+	position: relative;
+	width: 380px;
+	border-radius: 10px;
+}
+
+.current-date {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.current-date .date {
+	display: flex;
+	justify-content: space-between;
+	width: 22%;
+}
+
+.current-date .date .day-number {
+	font-size: 2em;
+	font-weight: bold;
+	line-height: 1em;
+}
+
+.current-date .date .month-year-wrapper {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	font-size: .8em;
+}
+
+.current-date .date .month-year-wrapper .month {
+	font-weight: bold;
+}
+
+.current-date .today {
+	font-weight: 600;
+}
+
+p {
+	padding-top: 10px;
+}
+
+button.add-task-btn {
+	background-color: #439ce8;
+	border: none;
+	border-radius: 50%;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.18);
+	cursor: pointer;
+	height: 90px;
+	width: 90px;
+	position: absolute;
+	bottom: -45px;
+	left: calc(190px - 45px);
+	outline: none;
+	transition: 200ms ease-in-out;
+}
+
+button.add-task-btn span {
+	font-size: 3em;
+	font-weight: bold;
+	color: #1B84DD;
+	font-family: none;
+}
+
+button.add-task-btn:active,
+#btnAdd:active {
+	transform: scale(.9);
+}
+
+.container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(150, 150, 150, 0.4);
+	width: 100%;
+	height: 100vh;
+}
+
+#toDoList {
+	margin: auto;
+	margin-top: 50vh;
+	width: 380px;
+	height: 85px;
+	background-color: white;
+	border-radius: 10px;
+	text-align: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+input {
+	display: block;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 4px 15px 4px 5px;
+	font-size: 1em;
+}
+
+#btnAdd {
+	background-color: #439ce8;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.18);
+	border-radius: 10px;
+	color: #1876C6;
+	margin: auto;
+	margin-top: 5px;
+	padding: 5px 15px;
+	border: 0;
+	font-size: 1em;
+	transition: 200ms ease-in-out;
+}
+
+#btnAdd:hover {
+	cursor: pointer;
+}
+
+ol {
+	padding-left: 50px;
+	padding-right: 50px;
+	list-style-type: upper-roman;
+	overflow: auto;
+	height: 14.5em;
+}
+
+ol li {
+	padding: 5px;
+	color: #000;
+}
+
+ol li:nth-child(even) {
+	background-color: #dfdfdf;
+}
+
+ol li::before {
+	background-color: #dfdfdf;
+}
+
+.strike {
+	text-decoration: line-through;
+}
+
+li:hover {
+	background-color: #ccc;
+}
+
+li:nth-child(even):hover {
+	background-color: #eee;
+}
+
+li:hover,
+fa:hover,
+.checkbox:hover {
+	cursor: pointer;
+}
+
+.fa {
+	display: inline-block;
+	font: normal normal normal 1.5em/1 FontAwesome;
+
+	text-rendering: auto;
+}
+
+.checkbox {
+	display: block;
+}
+
+.checkbox input[type="checkbox"] {
+	display: none;
+}
+
+i {
+	padding: 10px;
+}
+
+.checkbox input[type="checkbox"] + i:before {
+	content: "\f096";
+	position: relative;
+	bottom: -4px;
+	margin-right: 5px;
+	color: #999;
+}
+
+.checkbox:hover input[type="checkbox"] + i:before {
+	color: green;
+}
+
+.checkbox input[type="checkbox"]:checked + i:before {
+	content: "\f046";
+	color: green;
+}
+
+.checkbox input[type="checkbox"]:disabled + i:before,
+.checkbox input[type="checkbox"]:disabled:checked + i:before {
+	color: #ddd;
+}

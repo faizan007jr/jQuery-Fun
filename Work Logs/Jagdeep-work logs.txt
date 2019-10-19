@@ -1,0 +1,15 @@
+------------------Jagdeep-------------------
+
+todolist.html created on 28/11/2018
+css for todolist created on 28/11/2018
+javascript for todolist created on 28/11/2018
+
+javascript  for todolist continued on 29/11/2018
+
+javascript for todolist completed on  3/12/2018
+
+contact.html created on 4/12/2018
+
+combined other pages on 7/12/2018
+
+completed project on 9/12/2018  //combined all css to one main.css to make overall look consistent

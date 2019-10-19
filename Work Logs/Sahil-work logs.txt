@@ -1,0 +1,15 @@
+------------------Sahil Sheoran-------------------
+
+pingpong.html created on 28/11/2018
+css for pingpong created on 28/11/2018
+javascript for pingpong created on 28/11/2018
+
+javascript  for pingpong continued on 29/11/2018
+
+javascript for pingpong completed on  3/12/2018
+
+about.html created on 4/12/2018
+
+combined other pages on 7/12/2018
+
+completed project on 9/12/2018  //combined all css to one main.css to make overall look consistent

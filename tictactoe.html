@@ -1,0 +1,47 @@
+<!-- Faizan Jariwala -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="style/tictactoe.css" type="text/css" />
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="script/tictactoe.js"></script>
+	<title>TicTacToe</title>
+</head>
+
+<body>
+	<header>
+		<h1>Tic Tac Toe</h1>
+	</header>
+	<main>
+		<div class="formContainer">
+			<form>
+				<label for="player1">Player 1</label>
+				<input type="text" id="player1" autocomplete="off" />
+				<label for="player2">Player 2</label>
+				<input type="text" id="player2" autocomplete="off" />
+				<button id="btnStart">Start</button>
+			</form>
+		</div>
+
+		<div id="currentPlayer">
+			<h4></h4>
+		</div>
+
+		<div id="gameContainer">
+			<div id="sq1" class="gameSq"></div>
+			<div id="sq2" class="gameSq"></div>
+			<div id="sq3" class="gameSq"></div>
+			<div id="sq4" class="gameSq"></div>
+			<div id="sq5" class="gameSq"></div>
+			<div id="sq6" class="gameSq"></div>
+			<div id="sq7" class="gameSq"></div>
+			<div id="sq8" class="gameSq"></div>
+			<div id="sq9" class="gameSq"></div>
+		</div>
+	</main>
+	<div class="line"></div>
+</body>
+</html>

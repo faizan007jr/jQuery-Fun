@@ -1,0 +1,181 @@
+@font-face {
+	font-family: "Avant Garde";
+	src: url("avantn.ttf");
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: "Avant Garde";
+	background: linear-gradient(#74ebd5, #ACB6E5);
+	background-repeat: no-repeat;
+	min-height: 95.5vh;
+}
+
+header h1 {
+	font-weight: 400;
+	line-height: 60px;
+	font-size: 3em;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	text-shadow: 4px 4px 0px #ACB6E5, 7px 7px 0px rgba(0, 0, 0, 0.2);
+	margin-top: 30px;
+}
+
+#currentPlayer {
+	font-weight: 400;
+	line-height: 50px;
+	font-size: 1.5em;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+.x,
+.o {
+	/*display: inline-grid;*/
+	display: inline-grid;
+	height: 6em;
+	width: 6em;
+}
+
+.x:after {
+	display: inline-grid;
+	content: "\274c";
+	/* use the hex value here... */
+	font-size: 3em;
+	margin: auto;
+}
+
+.o:after {
+	display: inline-grid;
+	content: "\o";
+	text-shadow:
+		-3px -3px 0 #000,
+		3px -3px 0 #000,
+		-3px 3px 0 #000,
+		3px 3px 0 #000;
+	color: #f03a17;
+	/* use the hex value here... */
+	font-size: 5em;
+	margin: auto;
+}
+
+#gameContainer {
+	height: 300px;
+	width: 300px;
+	display: grid;
+	grid-template-columns: 100px 100px 100px;
+	margin: auto;
+	margin-top: 30px;
+}
+
+#sq1,
+#sq2,
+#sq3,
+#sq4,
+#sq5,
+#sq6,
+#sq7,
+#sq8,
+#sq9 {
+	margin: 0;
+	padding: 0;
+	height: 100px;
+	width: 100px;
+	border: 2px solid #000;
+}
+
+#sq1,
+#sq2,
+#sq3 {
+	border-top: 0;
+}
+
+#sq7,
+#sq8,
+#sq9 {
+	border-bottom: 0;
+}
+
+#sq1,
+#sq4,
+#sq7 {
+	border-left: 0;
+}
+
+#sq3,
+#sq6,
+#sq9 {
+	border-right: 0;
+}
+
+#sq1:hover,
+#sq2:hover,
+#sq3:hover,
+#sq4:hover,
+#sq5:hover,
+#sq6:hover,
+#sq7:hover,
+#sq8:hover,
+#sq9:hover {
+	cursor: pointer;
+}
+
+.formContainer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(150, 150, 150, 0.4);
+	width: 100%;
+	height: 100%;
+}
+
+.formContainer form {
+	margin-top: 30vh;
+	padding: 20px;
+	background-color: #f2f2f2;
+	border-radius: 10px;
+	text-align: center;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+	max-width: 480px;
+}
+
+form label {
+	padding: 12px 12px 12px 0;
+	display: inline-block;
+}
+
+form input[type=text] {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+}
+
+form button {
+	background-color: #439ce8;
+	color: white;
+	width: 90%;
+	padding: 12px;
+	margin: 12px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.line {
+	width: 100%;
+	height: 5px;
+	background-color: #000;
+	display: none;
+}

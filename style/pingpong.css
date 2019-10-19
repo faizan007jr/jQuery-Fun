@@ -1,0 +1,94 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+	overflow: hidden;
+	background: linear-gradient(#74ebd5, #ACB6E5);
+}
+
+#left {
+	position: relative;
+	width: 30px;
+	height: 200px;
+	background-color: white;
+	float: left;
+}
+
+#right {
+	position: relative;
+	width: 30px;
+	height: 200px;
+	background-color: white;
+	float: right;
+}
+
+#ball {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	border-radius: 50%;
+}
+
+#deli,
+#scoreleft,
+#scoreright {
+	font-size: 10em;
+	color: white;
+	z-index: 10;
+}
+
+#goal {
+	font-size: 10em;
+	transition: 1.5s all;
+	display: inline-block;
+	color: white;
+	display: none;
+}
+
+#c {
+	text-align: center;
+}
+
+.formContainer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(150, 150, 150, 0.4);
+	width: 100%;
+	height: 100%;
+}
+
+.formContainer form {
+	margin-top: 30vh;
+	padding: 20px;
+	background-color: #f2f2f2;
+	border-radius: 10px;
+	text-align: center;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+	max-width: 480px;
+	color: #439ce8;
+}
+
+form button {
+	background-color: #439ce8;
+	color: white;
+	width: 90%;
+	padding: 12px;
+	margin: 12px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-weight: 600;
+}
